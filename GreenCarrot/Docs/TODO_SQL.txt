@@ -1,0 +1,9 @@
+
+    TO DO
+
+
+    All the SQL tables
+
+    Logs
+    Authentication stuff for users?
+    Authentication stuff for providers?
