@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Operations Version="1.0" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
+  <Operation Name="Rename Refactor" Key="69b28716-f2e7-401f-8b12-db98b1dc9de6" ChangeDateTime="08/23/2018 04:30:24">
+    <Property Name="ElementName" Value="[dbo].[Size].[Description]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Size]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Name" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="d7c0295f-5f29-473d-9a31-1f255e6cb4f7" ChangeDateTime="08/23/2018 05:34:30">
+    <Property Name="ElementName" Value="[dbo].[Size].[Name]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Size]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Size" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="1e84d843-022e-4ae9-929a-38a3768b769c" ChangeDateTime="08/23/2018 05:36:53">
+    <Property Name="ElementName" Value="[dbo].[FK_ProductImage_ToTable]" />
+    <Property Name="ElementType" Value="SqlForeignKeyConstraint" />
+    <Property Name="ParentElementName" Value="[dbo].[ProductImage]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="[FK_ProductImage_Product]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="087c21c5-a24d-497e-8e43-d5e187fe6a30" ChangeDateTime="08/23/2018 05:38:36">
+    <Property Name="ElementName" Value="[dbo].[FK_ProductSize_ToTable]" />
+    <Property Name="ElementType" Value="SqlForeignKeyConstraint" />
+    <Property Name="ParentElementName" Value="[dbo].[ProductSize]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="[FK_ProductSize_Product]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="1388b880-9532-4033-a47d-32a096850140" ChangeDateTime="08/23/2018 05:38:43">
+    <Property Name="ElementName" Value="[dbo].[FK_ProductSize_ToTable_1]" />
+    <Property Name="ElementType" Value="SqlForeignKeyConstraint" />
+    <Property Name="ParentElementName" Value="[dbo].[ProductSize]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="[FK_ProductSize_Size]" />
+  </Operation>
+</Operations>
