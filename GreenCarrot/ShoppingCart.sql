@@ -1,0 +1,4 @@
+﻿CREATE TABLE [dbo].[ShoppingCart]
+(
+	[Id] INT NOT NULL PRIMARY KEY IDENTITY(1, 1) 
+)
