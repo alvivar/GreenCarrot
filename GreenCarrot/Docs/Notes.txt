@@ -4,3 +4,6 @@
 
 Only save images in SQL Server when they are smaller than 256K.
 https://www.microsoft.com/en-us/research/publication/to-blob-or-not-to-blob-large-object-storage-in-a-database-or-a-filesystem/?from=http%3A%2F%2Fresearch.microsoft.com%2Fapps%2Fpubs%2Fdefault.aspx%3Fid%3D64525
+
+Inspiration for orders stuff
+http://www.databaseanswers.org/data_models/e_commerce/index.htm
