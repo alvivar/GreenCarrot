@@ -70,6 +70,8 @@
     <Build Include="Address.sql" />
     <Build Include="ProductImage.sql" />
     <Build Include="ProductSize.sql" />
+    <Build Include="ShoppingCart.sql" />
+    <Build Include="CustomerAddress.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="GreenCarrot.refactorlog" />

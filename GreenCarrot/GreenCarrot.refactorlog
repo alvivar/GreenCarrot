@@ -35,4 +35,32 @@
     <Property Name="ParentElementType" Value="SqlTable" />
     <Property Name="NewName" Value="[FK_ProductSize_Size]" />
   </Operation>
+  <Operation Name="Rename Refactor" Key="15658ce2-8a33-4098-ae93-8f26305c11df" ChangeDateTime="08/23/2018 06:07:16">
+    <Property Name="ElementName" Value="[dbo].[FK_CustomerAddress_ToTable]" />
+    <Property Name="ElementType" Value="SqlForeignKeyConstraint" />
+    <Property Name="ParentElementName" Value="[dbo].[CustomerAddress]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="[FK_CustomerAddress_Customer]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="9ef8f44d-29e4-440f-9d3a-a2414197626b" ChangeDateTime="08/23/2018 06:07:34">
+    <Property Name="ElementName" Value="[dbo].[FK_CustomerAddress_ToTable_1]" />
+    <Property Name="ElementType" Value="SqlForeignKeyConstraint" />
+    <Property Name="ParentElementName" Value="[dbo].[CustomerAddress]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="[FK_CustomerAddress_Address]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="ac28f7ee-1741-4cf9-a9bb-2f9c6bef7e0b" ChangeDateTime="08/23/2018 06:43:10">
+    <Property Name="ElementName" Value="[dbo].[FK_ProviderProduct_ToTable]" />
+    <Property Name="ElementType" Value="SqlForeignKeyConstraint" />
+    <Property Name="ParentElementName" Value="[dbo].[ProviderProduct]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="[FK_ProviderProduct_Provider]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="5728a5ea-ea33-4900-a3ca-95fe8509e4a2" ChangeDateTime="08/23/2018 06:43:18">
+    <Property Name="ElementName" Value="[dbo].[FK_ProviderProduct_ToTable_1]" />
+    <Property Name="ElementType" Value="SqlForeignKeyConstraint" />
+    <Property Name="ParentElementName" Value="[dbo].[ProviderProduct]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="[FK_ProviderProduct_Product]" />
+  </Operation>
 </Operations>
