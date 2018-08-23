@@ -133,4 +133,18 @@
     <Property Name="ParentElementType" Value="SqlTable" />
     <Property Name="NewName" Value="Code" />
   </Operation>
+  <Operation Name="Rename Refactor" Key="79b33ad3-f650-4d63-a9be-2d63bf4a88bc" ChangeDateTime="08/23/2018 08:12:12">
+    <Property Name="ElementName" Value="[dbo].[FK_ProviderAddress_ToTable]" />
+    <Property Name="ElementType" Value="SqlForeignKeyConstraint" />
+    <Property Name="ParentElementName" Value="[dbo].[ProviderAddress]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="[FK_ProviderAddress_Provider]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="58b4c329-08e2-41bc-823b-a2535f9b34ed" ChangeDateTime="08/23/2018 08:12:16">
+    <Property Name="ElementName" Value="[dbo].[FK_ProviderAddress_ToTable_1]" />
+    <Property Name="ElementType" Value="SqlForeignKeyConstraint" />
+    <Property Name="ParentElementName" Value="[dbo].[ProviderAddress]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="[FK_ProviderAddress_Address]" />
+  </Operation>
 </Operations>
