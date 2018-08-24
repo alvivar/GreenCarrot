@@ -231,4 +231,25 @@
     <Property Name="ParentElementType" Value="SqlTable" />
     <Property Name="NewName" Value="MongoProductName" />
   </Operation>
+  <Operation Name="Rename Refactor" Key="dbbdb13e-daab-46b6-9985-60530683aa77" ChangeDateTime="08/24/2018 10:18:37">
+    <Property Name="ElementName" Value="[dbo].[Balance].[Amount]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Balance]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="BalanceAmount" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="41410434-4016-4106-83f1-b4e2cd942e15" ChangeDateTime="08/24/2018 10:22:11">
+    <Property Name="ElementName" Value="[dbo].[FK_CustomerBalance_ToTable]" />
+    <Property Name="ElementType" Value="SqlForeignKeyConstraint" />
+    <Property Name="ParentElementName" Value="[dbo].[CustomerBalance]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="[FK_CustomerBalance_Customer]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="b56b8763-edcf-4384-bb90-8539671187af" ChangeDateTime="08/24/2018 10:22:16">
+    <Property Name="ElementName" Value="[dbo].[FK_CustomerBalance_ToTable_1]" />
+    <Property Name="ElementType" Value="SqlForeignKeyConstraint" />
+    <Property Name="ParentElementName" Value="[dbo].[CustomerBalance]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="[FK_CustomerBalance_Balance]" />
+  </Operation>
 </Operations>

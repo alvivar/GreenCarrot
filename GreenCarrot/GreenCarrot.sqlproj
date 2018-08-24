@@ -76,6 +76,8 @@
     <Build Include="Payment.sql" />
     <Build Include="PaymentMethod.sql" />
     <Build Include="CustomerPaymentMethod.sql" />
+    <Build Include="CustomerBalance.sql" />
+    <Build Include="ProviderBalance.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="GreenCarrot.refactorlog" />

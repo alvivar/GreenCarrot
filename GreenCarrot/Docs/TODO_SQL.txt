@@ -4,6 +4,7 @@
 
     All the SQL tables
 
+    Checksums
     Logs
     Authentication stuff for users?
     Authentication stuff for providers?
