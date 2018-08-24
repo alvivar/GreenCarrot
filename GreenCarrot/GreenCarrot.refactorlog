@@ -175,4 +175,60 @@
     <Property Name="ParentElementType" Value="SqlTable" />
     <Property Name="NewName" Value="[FK_Invoice_InvoiceType]" />
   </Operation>
+  <Operation Name="Rename Refactor" Key="5b94794c-38ab-4102-8a8e-2b7727f1612e" ChangeDateTime="08/24/2018 09:55:47">
+    <Property Name="ElementName" Value="[dbo].[FK_CustomerPaymentMethod_ToTable]" />
+    <Property Name="ElementType" Value="SqlForeignKeyConstraint" />
+    <Property Name="ParentElementName" Value="[dbo].[CustomerPaymentMethod]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="[FK_CustomerPaymentMethod_Customer]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="4def4e71-a246-4eb0-8c6b-6aab19b34151" ChangeDateTime="08/24/2018 09:56:09">
+    <Property Name="ElementName" Value="[dbo].[FK_CustomerPaymentMethod_ToTable_1]" />
+    <Property Name="ElementType" Value="SqlForeignKeyConstraint" />
+    <Property Name="ParentElementName" Value="[dbo].[CustomerPaymentMethod]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="[FK_CustomerPaymentMethod_PaymentMethod]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="bba4ea86-bcf3-4352-a417-4bb9984e8ca9" ChangeDateTime="08/24/2018 10:00:28">
+    <Property Name="ElementName" Value="[dbo].[Product].[Name]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Product]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="MongoName" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="8cb31f00-296b-4682-8249-2d551936dc99" ChangeDateTime="08/24/2018 10:00:32">
+    <Property Name="ElementName" Value="[dbo].[Product].[MongoName]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Product]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="MongoId" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="33905a31-6b66-4d92-881e-418f78d48958" ChangeDateTime="08/24/2018 10:00:36">
+    <Property Name="ElementName" Value="[dbo].[Product].[Description]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Product]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="MongoName" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="c057a655-99d1-4756-b47e-116982858b63" ChangeDateTime="08/24/2018 10:02:33">
+    <Property Name="ElementName" Value="[dbo].[CustomerPaymentMethod].[CreditCard]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[CustomerPaymentMethod]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="CardNumber" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="b6e28fc4-0ed9-48d1-b647-3c1404ebb44d" ChangeDateTime="08/24/2018 10:08:08">
+    <Property Name="ElementName" Value="[dbo].[Product].[MongoName]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Product]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="ProductName" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="d07ef889-4e04-4327-9c9b-f6100c532c93" ChangeDateTime="08/24/2018 10:08:22">
+    <Property Name="ElementName" Value="[dbo].[Product].[ProductName]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Product]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="MongoProductName" />
+  </Operation>
 </Operations>
