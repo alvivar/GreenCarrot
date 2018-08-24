@@ -74,6 +74,9 @@
     <Build Include="OrderProduct.sql" />
     <Build Include="OrderProductStatus.sql" />
     <Build Include="ProviderAddress.sql" />
+    <Build Include="Invoice.sql" />
+    <Build Include="InvoiceStatus.sql" />
+    <Build Include="Payment.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="GreenCarrot.refactorlog" />

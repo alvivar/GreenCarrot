@@ -147,4 +147,32 @@
     <Property Name="ParentElementType" Value="SqlTable" />
     <Property Name="NewName" Value="[FK_ProviderAddress_Address]" />
   </Operation>
+  <Operation Name="Rename Refactor" Key="7fc169a7-64e6-4315-95f4-82322366abe7" ChangeDateTime="08/24/2018 08:22:11">
+    <Property Name="ElementName" Value="[dbo].[Invoice].[FK_Invoice_InvoiceStatus]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Invoice]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="FK_Invoice_InvoiceStatus_Id" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="e2683c80-933e-4e20-a718-c6f57cca4d2a" ChangeDateTime="08/24/2018 08:46:09">
+    <Property Name="ElementName" Value="[dbo].[FK_Invoice_ToTable]" />
+    <Property Name="ElementType" Value="SqlForeignKeyConstraint" />
+    <Property Name="ParentElementName" Value="[dbo].[Invoice]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="[FK_Invoice_OrderId]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="cfe0e0e4-0d74-47a0-97ea-f41583e45f42" ChangeDateTime="08/24/2018 08:46:17">
+    <Property Name="ElementName" Value="[dbo].[FK_Invoice_OrderId]" />
+    <Property Name="ElementType" Value="SqlForeignKeyConstraint" />
+    <Property Name="ParentElementName" Value="[dbo].[Invoice]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="[FK_Invoice_Order]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="c4cf0b5c-d772-4c6d-8a31-535f74708e40" ChangeDateTime="08/24/2018 09:21:54">
+    <Property Name="ElementName" Value="[dbo].[FK_Invoice_ToTable]" />
+    <Property Name="ElementType" Value="SqlForeignKeyConstraint" />
+    <Property Name="ParentElementName" Value="[dbo].[Invoice]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="[FK_Invoice_InvoiceType]" />
+  </Operation>
 </Operations>
