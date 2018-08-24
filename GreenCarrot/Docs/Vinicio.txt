@@ -1,0 +1,45 @@
+
+        [Aug 23, 2018, 6:58 AM]
+
+
+Esooo!!!!
+
+Estas serían mis observaciones  por el momento :
+
+- Todo lo que tiene que ver con productos ya va a ir en Cassandra, entonces no
+hay necesidad de tener las tablas de productos (todas las que contienen la
+palabra Product se pueden eliminar)
+
+- Donde requieras referenciar un producto puedes poner un campo string
+"productname" el cual posteriormente desde la app nodejs vamos a llenar  (al
+sacarlo desde Cassandra) por ejemplo si tienes que citar el producto al generar
+el recibo de pago y así.
+
+- En cuanto a las direcciones del provider y del consumer; eso es mas info de
+rutas, esto más bien podría agregarse como un par de collections en mongodb.
+Pero no estoy 100% seguro entonces mandale un correo al profe y me copias para
+ver que responde.
+
+- En efecto si , aun faltan las tablas relacionadas con las transacciones
+monetarias, mínimo serían algo asi:
+
+    1) Cashflow (Esta es la de movimientos) debería tener el valor del
+    movimlento  (e.g: 34.99 dolares) o asi, el cashflowType (debit/credit), la
+    fecha y el productname (string simple) y método de pago / deduccion
+
+    2) Balance: esta es la de saldos. Debería tener un valor Saldo (e.g: 450.99
+    dolares) y el cliente o provider al que pertenece. Debería haber un proceso
+    que revise los movimientos recientes y los aplique al saldo. Por ejemplo:
+
+    Para cuenta del cliente (o proveedor) XYZ
+        Entra mov1: +35$
+        Entra mov2: -10$
+        Entra mov3: +25$
+        Entra mov4: -5$
+
+En la tabla de saldo yo esperaría ver Saldo=45$ para cliente (o proveedor) XYZ.
+
+Además por cada movimiento tiene que haber un recibo generado.
+
+
+Tuanis!
