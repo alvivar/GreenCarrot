@@ -1,0 +1,42 @@
+Hola Nuñez, Vinicio!
+
+(Quería mandar el correo temprano entonces no tuve chance de discutirlo con
+Vinicio, entonces va como para ambos).
+
+Maes, adjunto un avance del diseño de la parte relacional de la progra, esta es
+como la estructura principal para que funcione el Shooping cart, las órdenes de
+compra, pagos y el vínculo de los provedores con los productos.
+
+Falta incluir logs, autenticación, pulir sobre los datos internos de las tablas,
+checksums.
+
+Tengo unas cuantas dudas.
+
+- La lógica viene siendo, el ShoppingCart es básicamente una orden de compra
+(Order) que puede contener n productos (OrderProduct) como los seleccione el
+consumidor, para la cual se generan recibos (Invoice) y estos pueden ser pagados
+(Payments) por los Consumidores (Consumer). Order, OrderProduct e Invoice tiene
+estados (<Table>Status) como para representar devoluciones, cancelaciones, ese
+tipo de cosas. Cualquier observación sobre esta estructura es bien recibida!
+
+- Sobre las direcciones de los provedores y consumidores, esto tiene pinta a que
+puede almacenarse solamente en MongoDB por estar relacionado con las rutas, o la
+parte relacional debería tener esta información también?
+
+- El vínculo con la información de los productos en la tabla Products es
+mediante un varchar para algún identificador ID conveniente con la parte de
+MongoDB, es esto suficiente? Algún tip al respecto?
+
+- Vinicio propone usar el patrón saldo/movimiento con una tabla de Balance para
+los consumidores y provedores, en esta iteración yo cree 2 tablas
+(ConsumerBalance, ProviderBalance), una para cada uno de ellos. El patrón según
+le entendí es que haya un proceso observando los pagos (Payments) y que este
+proceso actualiza los saldos. Me pregunto si habré integrado correctamente esta
+idea, si se podría resolver con una sola tabla, o Nuñez si tiene alguna
+observación sobre esto?
+
+- Faltará algo importante de incluir?
+
+De momento eso sería, me avisan sobre cualquier detalle que noten!
+
+Tuanis!
