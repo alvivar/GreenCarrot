@@ -61,15 +61,9 @@
   </ItemGroup>
   <ItemGroup>
     <Build Include="Customer.sql" />
-    <Build Include="Product.sql" />
     <Build Include="Provider.sql" />
-    <Build Include="ProviderProduct.sql" />
     <Build Include="Address.sql" />
     <Build Include="CustomerAddress.sql" />
-    <Build Include="Order.sql" />
-    <Build Include="OrderStatus.sql" />
-    <Build Include="OrderProduct.sql" />
-    <Build Include="OrderProductStatus.sql" />
     <Build Include="ProviderAddress.sql" />
     <Build Include="Invoice.sql" />
     <Build Include="InvoiceStatus.sql" />
@@ -78,6 +72,7 @@
     <Build Include="CustomerPaymentMethod.sql" />
     <Build Include="CustomerBalance.sql" />
     <Build Include="ProviderBalance.sql" />
+    <Build Include="InvoiceDetail.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="GreenCarrot.refactorlog" />

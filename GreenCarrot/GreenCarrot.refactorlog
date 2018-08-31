@@ -252,4 +252,123 @@
     <Property Name="ParentElementType" Value="SqlTable" />
     <Property Name="NewName" Value="[FK_CustomerBalance_Balance]" />
   </Operation>
+  <Operation Name="Rename Refactor" Key="45558ca4-94f7-4823-9efb-70564083c634" ChangeDateTime="08/31/2018 04:13:23">
+    <Property Name="ElementName" Value="[dbo].[Order].[Order]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Order]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="MongoOrderId" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="024fda2e-740d-4ea5-b178-408d8f74085a" ChangeDateTime="08/31/2018 04:58:39">
+    <Property Name="ElementName" Value="[dbo].[Invoice].[Details]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Invoice]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Description" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="3c2145e8-4b9d-4273-a6bd-390b45ecffca" ChangeDateTime="08/31/2018 04:59:02">
+    <Property Name="ElementName" Value="[dbo].[FK_InvoiceDetail_invoice]" />
+    <Property Name="ElementType" Value="SqlForeignKeyConstraint" />
+    <Property Name="ParentElementName" Value="[dbo].[InvoiceDetail]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="[FK_InvoiceDetail_Invoice]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="7e67a133-0cf9-411d-9018-86245abb21f2" ChangeDateTime="08/31/2018 05:00:24">
+    <Property Name="ElementName" Value="[dbo].[Invoice].[FK_Invoice_Order_Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Invoice]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="OrderId" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="7e150df9-0d28-4dd8-93b2-c13c16fbd1c9" ChangeDateTime="08/31/2018 05:00:31">
+    <Property Name="ElementName" Value="[dbo].[Invoice].[FK_Invoice_InvoiceStatus_Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Invoice]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="InvoiceStatusId" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="e6a7814e-9b30-444f-a775-62dd20bc6287" ChangeDateTime="08/31/2018 05:06:17">
+    <Property Name="ElementName" Value="[dbo].[ProviderBalance].[FK_ProviderBalance_Provider_Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[ProviderBalance]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="ProviderId" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="331b23ae-8317-4b52-9727-a16b415a78f6" ChangeDateTime="08/31/2018 05:07:03">
+    <Property Name="ElementName" Value="[dbo].[Invoice].[MongoOrderId]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Invoice]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="CassandraOrderId" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="2a6c10b2-0b8d-41a8-b273-f4012d1deeab" ChangeDateTime="08/31/2018 05:08:42">
+    <Property Name="ElementName" Value="[dbo].[InvoiceDetail].[Description]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[InvoiceDetail]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Detail" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="c4efb76c-5686-4c89-bf6c-7fb555cde367" ChangeDateTime="08/31/2018 05:09:12">
+    <Property Name="ElementName" Value="[dbo].[Payment].[FK_Payment_Invoice_Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Payment]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="InvoiceId" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="5672b6c8-3c36-4eb7-b26d-c4e5d98743cc" ChangeDateTime="08/31/2018 05:09:17">
+    <Property Name="ElementName" Value="[dbo].[Payment].[FK_Payment_CustomerPaymentMethod_Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Payment]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="CustomerPaymentMethodId" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="9b1e7145-2940-49ff-9653-08d085a1e0ef" ChangeDateTime="08/31/2018 05:09:48">
+    <Property Name="ElementName" Value="[dbo].[CustomerPaymentMethod].[FK_CustomerPaymentMethod_Customer_Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[CustomerPaymentMethod]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="CustomerId" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="19d38a4d-4e00-4945-9b0a-5b11b84f25d8" ChangeDateTime="08/31/2018 05:09:51">
+    <Property Name="ElementName" Value="[dbo].[CustomerPaymentMethod].[FK_CustomerPaymentMethod_PaymentMethod_Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[CustomerPaymentMethod]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="PaymentMethodId" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="c37d89f8-38a4-4aba-ac9a-ec58608c34c7" ChangeDateTime="08/31/2018 05:10:05">
+    <Property Name="ElementName" Value="[dbo].[CustomerAddress].[FK_CustomerAddress_Customer_Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[CustomerAddress]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="CustomerId" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="47fc407b-b94a-411d-b9e8-028f63ee059e" ChangeDateTime="08/31/2018 05:10:09">
+    <Property Name="ElementName" Value="[dbo].[CustomerAddress].[FK_CustomerAddress_Address_Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[CustomerAddress]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="AddressId" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="471e1b08-1cee-47c1-8a23-1f6d2d10fcb3" ChangeDateTime="08/31/2018 05:10:18">
+    <Property Name="ElementName" Value="[dbo].[CustomerBalance].[FK_CustomerBalance_Customer_Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[CustomerBalance]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="CustomerId" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="60807255-6c81-451d-ae3c-ff64ea782e84" ChangeDateTime="08/31/2018 05:10:46">
+    <Property Name="ElementName" Value="[dbo].[ProviderAddress].[FK_ProviderAddress_Provider_Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[ProviderAddress]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="ProviderId" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="4fd1fd81-fc56-40da-abb4-38bece26f113" ChangeDateTime="08/31/2018 05:10:50">
+    <Property Name="ElementName" Value="[dbo].[ProviderAddress].[FK_ProviderAddress_Address_Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[ProviderAddress]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="AddressId" />
+  </Operation>
 </Operations>
