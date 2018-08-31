@@ -1,0 +1,30 @@
+
+    Mandame los diseños en físico para poder ver detalles de los tipos de campos
+
+    Hace los campos FK con nombres mas claros y simples no esos campos identify
+
+    En sql tenes que tener lo que son transacciones, de eso no tenes nada, ahi
+    registrar todo el dinero que entra y sale
+
+    Las ordenes como tal van a secuder en cassandra mas bien
+
+    En la factura ocupas el detalle de cada linea de la factura
+
+    El paymentmethod ocupas minimo el url del del api
+
+    Cuando haces un intento de payment lo tenes que registtrar en payments, en
+    plurar, podes revisar lo que retorna y lo que necesita un servicio tipo
+    paypal por ejemplo cuando manda aprocesar
+
+    Una vez que el payment se registra, si es positivo entonces se genera le
+    invoice que tenes y tenes tambien las transacciones
+
+    El modelo de direcciones lo tenes muy incompleto comparado con el que
+    hicimos para la TC1
+
+    Veo que no tenes manejo de usuarios ahi tampoco
+
+    No hay bitacora
+
+    No tenes información de los fees, taxes o similares que son parte de un
+    sistema de facturacion y cobro
