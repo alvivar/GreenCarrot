@@ -1,7 +1,7 @@
 ﻿CREATE TABLE [dbo].[Invoice]
 (
 	[Id] INT NOT NULL PRIMARY KEY IDENTITY(1, 1), 
-    [CassandraOrderId] VARCHAR(50) NULL, 
+    [CassandraOrderId] VARCHAR(50) NOT NULL, 
     [InvoiceStatusId] INT NOT NULL, 
     [Description] VARCHAR(500) NOT NULL, 
     [Date] DATETIME NOT NULL, 
