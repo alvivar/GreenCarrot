@@ -532,4 +532,39 @@
     <Property Name="ParentElementType" Value="SqlTable" />
     <Property Name="NewName" Value="PermissionId" />
   </Operation>
+  <Operation Name="Rename Refactor" Key="cdf06f6b-4262-4a59-a16e-834eff563df0" ChangeDateTime="09/02/2018 22:42:08">
+    <Property Name="ElementName" Value="[dbo].[Log].[FK_Log_LogLevel_Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Log]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="LogLeveId" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="dcfee061-fd29-4969-a3a4-fc18853a9af3" ChangeDateTime="09/02/2018 22:42:16">
+    <Property Name="ElementName" Value="[dbo].[Log].[FK_Log_LogType_Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Log]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="LogTypeId" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="f8e8abdd-0326-43a7-af2f-c0e5f0915e6a" ChangeDateTime="09/02/2018 22:42:24">
+    <Property Name="ElementName" Value="[dbo].[Log].[FK_Log_LogSource_Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Log]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="LogSourceId" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="21762af9-9bda-43d4-b987-3f4ae48690e2" ChangeDateTime="09/02/2018 22:42:33">
+    <Property Name="ElementName" Value="[dbo].[Log].[FK_Log_User_Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Log]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="LogUserId" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="6e431e80-5441-4451-9410-a14221f4a82f" ChangeDateTime="09/02/2018 22:49:30">
+    <Property Name="ElementName" Value="[dbo].[Log].[LogUserId]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Log]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="[UserId]" />
+  </Operation>
 </Operations>
