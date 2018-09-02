@@ -1,24 +1,23 @@
 
     Mandame los diseños en físico para poder ver detalles de los tipos de campos
-        - Got it!
+        Got it!
 
     Hace los campos FK con nombres mas claros y simples no esos campos identify
-        - Done!
+        Done!
 
     En sql tenes que tener lo que son transacciones, de eso no tenes nada, ahi
     registrar todo el dinero que entra y sale
-        -
 
     Las ordenes como tal van a secuder en cassandra mas bien
-        - Removí todo relacionado con órdenes y productos, básicamente el
+        Removí todo relacionado con órdenes y productos, básicamente el
         [Invoice] se conecta con la orden en Cassandra mediante el varchar
         CassandraOrderId.
 
     En la factura ocupas el detalle de cada linea de la factura
-        - Agregué la tabla [InvoiceDetail] que contiene un FK al InvoiceID.
+        Agregué la tabla [InvoiceDetail] que contiene un FK al InvoiceID.
 
     El paymentmethod ocupas minimo el url del del api
-        -
+        Done!
 
     Cuando haces un intento de payment lo tenes que registtrar en payments, en
     plurar, podes revisar lo que retorna y lo que necesita un servicio tipo
@@ -29,10 +28,13 @@
 
     El modelo de direcciones lo tenes muy incompleto comparado con el que
     hicimos para la TC1
+        Done!
 
     Veo que no tenes manejo de usuarios ahi tampoco
+        Done!
 
     No hay bitacora
+        Done!
 
     No tenes información de los fees, taxes o similares que son parte de un
     sistema de facturacion y cobro
