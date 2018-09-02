@@ -60,22 +60,23 @@
     <Folder Include="Docs" />
   </ItemGroup>
   <ItemGroup>
-    <Build Include="Customer.sql" />
-    <Build Include="Provider.sql" />
+    <Build Include="User.sql" />
     <Build Include="Address.sql" />
-    <Build Include="CustomerAddress.sql" />
-    <Build Include="ProviderAddress.sql" />
+    <Build Include="UserAddress.sql" />
     <Build Include="Invoice.sql" />
     <Build Include="InvoiceStatus.sql" />
     <Build Include="Payment.sql" />
     <Build Include="PaymentMethod.sql" />
-    <Build Include="CustomerPaymentMethod.sql" />
-    <Build Include="CustomerBalance.sql" />
-    <Build Include="ProviderBalance.sql" />
+    <Build Include="UserPaymentMethod.sql" />
+    <Build Include="UserBalance.sql" />
     <Build Include="InvoiceDetail.sql" />
     <Build Include="City.sql" />
     <Build Include="Country.sql" />
     <Build Include="Province.sql" />
+    <Build Include="UserRole.sql" />
+    <Build Include="Role.sql" />
+    <Build Include="Permission.sql" />
+    <Build Include="RolePermission.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="GreenCarrot.refactorlog" />
