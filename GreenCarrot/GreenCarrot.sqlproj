@@ -73,6 +73,9 @@
     <Build Include="CustomerBalance.sql" />
     <Build Include="ProviderBalance.sql" />
     <Build Include="InvoiceDetail.sql" />
+    <Build Include="City.sql" />
+    <Build Include="Country.sql" />
+    <Build Include="Province.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="GreenCarrot.refactorlog" />
