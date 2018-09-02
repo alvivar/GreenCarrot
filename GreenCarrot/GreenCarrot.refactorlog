@@ -371,4 +371,25 @@
     <Property Name="ParentElementType" Value="SqlTable" />
     <Property Name="NewName" Value="AddressId" />
   </Operation>
+  <Operation Name="Rename Refactor" Key="39b46ec4-d9bf-4ff6-8ba4-e966b05a812c" ChangeDateTime="09/02/2018 21:46:03">
+    <Property Name="ElementName" Value="[dbo].[FK_Address_ToTable]" />
+    <Property Name="ElementType" Value="SqlForeignKeyConstraint" />
+    <Property Name="ParentElementName" Value="[dbo].[Address]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="[FK_Address_City]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="fbf5dfbf-edc3-4fed-b353-fe6a3ff6de04" ChangeDateTime="09/02/2018 21:46:11">
+    <Property Name="ElementName" Value="[dbo].[FK_Address_ToTable_1]" />
+    <Property Name="ElementType" Value="SqlForeignKeyConstraint" />
+    <Property Name="ParentElementName" Value="[dbo].[Address]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="[FK_Address_Province]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="e67aaf69-c491-4657-8c0f-58b0ef94937b" ChangeDateTime="09/02/2018 21:46:27">
+    <Property Name="ElementName" Value="[dbo].[FK_Address_ToTable_2]" />
+    <Property Name="ElementType" Value="SqlForeignKeyConstraint" />
+    <Property Name="ParentElementName" Value="[dbo].[Address]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="[FK_Address_Country]" />
+  </Operation>
 </Operations>
