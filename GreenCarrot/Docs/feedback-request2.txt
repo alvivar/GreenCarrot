@@ -1,0 +1,6 @@
+Hola maes!
+
+Les comparto dudas y un avance del diseño.
+
+- Hay algo que tenga que administrar la base de datos SQL de los provedores a
+nivel de transacción?
