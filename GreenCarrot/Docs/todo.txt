@@ -2,7 +2,8 @@
         To do
 
 
-    Checksums
-    Logs
-    Authentication stuff for users?
-    Authentication stuff for providers?
+    2018/09/03 08:04 am
+    x Núnez feedback 1
+    x Checksums
+    x Logs
+    x Authentication stuff for users
