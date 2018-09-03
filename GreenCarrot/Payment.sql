@@ -7,7 +7,7 @@
     [TaxAmout] DECIMAL(8, 3) NOT NULL,
     [TaxPercentage] DECIMAL(4, 3) NOT NULL,
     [TaxZipCode] VARCHAR(50) NOT NULL,
-    [PaidDate] DATETIME NOT NULL,
+    [Paid] DATETIME NOT NULL,
     [CheckSum] VARCHAR(50) NOT NULL,
     CONSTRAINT [FK_Payment_UserPaymentMethod] FOREIGN KEY ([UserPaymentMethodId]) REFERENCES [UserPaymentMethod]([Id])
 )
