@@ -3,7 +3,11 @@ Que maes!
 Les comparto dudas y un avance del diseño.
 
 - Para generar cada línea del detalle de la factura [InvoiceDetail] fijo hay que
-consultar Cassandra para obtener los datos de los productos. Verdad?
+consultar Cassandra para obtener los datos de los productos, por lo cual en la
+tabla de detalle incluí CassandraProductId para vincularlo el detalle con cada
+elemento, es esto suficiente o se ocupan más datos?
 
-- Un usuario de la base de datos puede a nivel lógico ser provedor, no veo mucha
-diferencia entre los datos que cada uno ocupa, ya que ambos tienen un balance.
+- Hice una tabla de [UserType] como para diferenciar entre si es cliente,
+proveedor, etc, ya que no veo mucha diferencia entre los datos de ellos a nivel
+de transacción y la lógica de [User] les funciona a ambos. Me pregunto si
+[UserRole] sería suficiente para categorizarlos?
