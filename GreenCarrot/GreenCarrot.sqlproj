@@ -68,7 +68,7 @@
     <Build Include="Payment.sql" />
     <Build Include="PaymentMethod.sql" />
     <Build Include="UserPaymentMethod.sql" />
-    <Build Include="UserBalance.sql" />
+    <Build Include="Balance.sql" />
     <Build Include="InvoiceDetail.sql" />
     <Build Include="City.sql" />
     <Build Include="Country.sql" />
@@ -81,6 +81,10 @@
     <Build Include="LogLevel.sql" />
     <Build Include="LogType.sql" />
     <Build Include="LogSource.sql" />
+    <Build Include="Transaction.sql" />
+    <Build Include="TransactionDetail.sql" />
+    <Build Include="Authentication.sql" />
+    <Build Include="UserType.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="GreenCarrot.refactorlog" />

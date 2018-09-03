@@ -574,4 +574,39 @@
     <Property Name="ParentElementType" Value="SqlTable" />
     <Property Name="NewName" Value="CreatedDate" />
   </Operation>
+  <Operation Name="Rename Refactor" Key="e524cbc5-a77e-4fa1-90f3-5040d47fb92c" ChangeDateTime="09/03/2018 02:32:22">
+    <Property Name="ElementName" Value="[dbo].[Payment].[PaidDate]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Payment]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Paid" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="104bf539-c988-4cd3-8b78-46911c880018" ChangeDateTime="09/03/2018 02:44:49">
+    <Property Name="ElementName" Value="[dbo].[UserBalance]" />
+    <Property Name="ElementType" Value="SqlTable" />
+    <Property Name="ParentElementName" Value="[dbo]" />
+    <Property Name="ParentElementType" Value="SqlSchema" />
+    <Property Name="NewName" Value="[Balance]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="ad201077-23fe-4360-b421-88ac292dc21c" ChangeDateTime="09/03/2018 02:45:02">
+    <Property Name="ElementName" Value="[dbo].[FK_UserBalance_User]" />
+    <Property Name="ElementType" Value="SqlForeignKeyConstraint" />
+    <Property Name="ParentElementName" Value="[dbo].[Balance]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="[FK_Balance_User]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="4da61775-f0d3-4918-ba7a-b80cb3424139" ChangeDateTime="09/03/2018 02:52:38">
+    <Property Name="ElementName" Value="[dbo].[Balance].[AmountChanged]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Balance]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="TransactionDate" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="16701487-34a1-47ea-80e8-1b9bf0f12a78" ChangeDateTime="09/03/2018 02:52:46">
+    <Property Name="ElementName" Value="[dbo].[Balance].[TransactionDate]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Balance]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Transacted" />
+  </Operation>
 </Operations>
