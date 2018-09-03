@@ -7,6 +7,7 @@
 
     En sql tenes que tener lo que son transacciones, de eso no tenes nada, ahi
     registrar todo el dinero que entra y sale
+        Done!
 
     Las ordenes como tal van a secuder en cassandra mas bien
         Removí todo relacionado con órdenes y productos, básicamente el
@@ -22,9 +23,11 @@
     Cuando haces un intento de payment lo tenes que registtrar en payments, en
     plurar, podes revisar lo que retorna y lo que necesita un servicio tipo
     paypal por ejemplo cuando manda aprocesar
+        Done!
 
     Una vez que el payment se registra, si es positivo entonces se genera le
     invoice que tenes y tenes tambien las transacciones
+        Done!
 
     El modelo de direcciones lo tenes muy incompleto comparado con el que
     hicimos para la TC1
