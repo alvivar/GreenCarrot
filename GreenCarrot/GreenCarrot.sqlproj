@@ -84,7 +84,10 @@
     <Build Include="Transaction.sql" />
     <Build Include="TransactionDetail.sql" />
     <Build Include="Authentication.sql" />
-    <Build Include="UserType.sql" />
+    <Build Include="TransactionType.sql" />
+    <Build Include="AuthenticationSource.sql" />
+    <Build Include="UserAuthentication.sql" />
+    <Build Include="TransactionStatus.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="GreenCarrot.refactorlog" />

@@ -609,4 +609,60 @@
     <Property Name="ParentElementType" Value="SqlTable" />
     <Property Name="NewName" Value="Transacted" />
   </Operation>
+  <Operation Name="Rename Refactor" Key="e0d6ed08-294b-4eee-b290-e5dd96d59e22" ChangeDateTime="09/03/2018 12:53:19">
+    <Property Name="ElementName" Value="[dbo].[InvoiceStatus].[Code]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[InvoiceStatus]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Name" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="86bff53f-2ffe-40be-a687-5029fc5691af" ChangeDateTime="09/03/2018 13:07:29">
+    <Property Name="ElementName" Value="[dbo].[Balance].[Transacted]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Balance]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Created" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="5382f52f-6997-453b-905c-caccc7026259" ChangeDateTime="09/03/2018 13:17:38">
+    <Property Name="ElementName" Value="[dbo].[FK_TransactionDetail_ToTable]" />
+    <Property Name="ElementType" Value="SqlForeignKeyConstraint" />
+    <Property Name="ParentElementName" Value="[dbo].[TransactionDetail]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="[FK_TransactionDetail_User1]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="6259df0d-1e6b-4c82-8cc3-85ee155d4bb1" ChangeDateTime="09/03/2018 13:17:44">
+    <Property Name="ElementName" Value="[dbo].[FK_TransactionDetail_ToTable_1]" />
+    <Property Name="ElementType" Value="SqlForeignKeyConstraint" />
+    <Property Name="ParentElementName" Value="[dbo].[TransactionDetail]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="[FK_TransactionDetail_User2]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="f675e6ea-1537-4619-8c94-4173f28d990e" ChangeDateTime="09/03/2018 13:27:47">
+    <Property Name="ElementName" Value="[dbo].[Authentication].[FK_Authentication_AuthenticationSource_Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Authentication]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="[AuthenticationSourceId]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="d4276afd-e391-4ca1-814e-85cddd6f6a40" ChangeDateTime="09/03/2018 13:29:20">
+    <Property Name="ElementName" Value="[dbo].[UserAuthentication].[FK_UserAuthentication_User_Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[UserAuthentication]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="[UserId]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="b36ab675-a97a-4417-b476-b4aa22385cfe" ChangeDateTime="09/03/2018 13:29:27">
+    <Property Name="ElementName" Value="[dbo].[UserAuthentication].[FK_UserAuthentication_Authentication_Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[UserAuthentication]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="[AuthenticationId]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="4a2a0b43-fb48-47d3-a842-2c5653efa38f" ChangeDateTime="09/03/2018 13:44:22">
+    <Property Name="ElementName" Value="[dbo].[FK_Transaction_ToTable]" />
+    <Property Name="ElementType" Value="SqlForeignKeyConstraint" />
+    <Property Name="ParentElementName" Value="[dbo].[Transaction]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="[FK_Transaction_Status]" />
+  </Operation>
 </Operations>
