@@ -1,6 +1,24 @@
 
     Notes
 
+>
+https://dba.stackexchange.com/questions/43585/financial-transactions-with-and-without-commissions
+
+For any application where you are tracking money changing hands, you should
+always use a Double Entry Accounting system. Double entry accounting has been
+the standard for tracking money for over 500 years. There is no good reason to
+use any other method.
+
+This entails a TRANSACTION table and a TRANSACTION_DETAIL table. The transaction
+table has one record per transaction that includes header information, like the
+date, the total amount, any categorization attributes or relationships, etc.
+
+The transaction detail has two or more records per transaction. These records
+break down where the money comes from and goes to. In your case, you might have
+three records per transaction. One shows the money coming in from the payment
+service. The other two show the money going out to a commission account and to
+an income account.
+<
 
 Git tag 'v2' contains the database version that handles orders. That's not required.
 
