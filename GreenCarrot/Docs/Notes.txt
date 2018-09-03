@@ -1,6 +1,11 @@
 
     Notes
 
+
+Good technique to register monetary transactions
+https://en.wikipedia.org/wiki/Double-entry_bookkeeping_system
+
+
 >
 https://dba.stackexchange.com/questions/43585/financial-transactions-with-and-without-commissions
 
