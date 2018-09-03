@@ -1,6 +1,9 @@
-Hola maes!
+Que maes!
 
 Les comparto dudas y un avance del diseño.
 
-- Hay algo que tenga que administrar la base de datos SQL de los provedores a
-nivel de transacción?
+- Para generar cada línea del detalle de la factura [InvoiceDetail] fijo hay que
+consultar Cassandra para obtener los datos de los productos. Verdad?
+
+- Un usuario de la base de datos puede a nivel lógico ser provedor, no veo mucha
+diferencia entre los datos que cada uno ocupa, ya que ambos tienen un balance.
