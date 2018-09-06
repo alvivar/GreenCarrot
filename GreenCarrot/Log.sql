@@ -12,7 +12,7 @@
     [Details] VARCHAR(1000) NOT NULL,
     [ReferenceId1] INT NULL,
     [ReferenceId2] INT NULL,
-	[CheckSum] VARCHAR(50) NOT NULL,
+	[CheckSum] VARBINARY(100) NOT NULL,
     [LoggedDate] DATETIME NOT NULL,
     CONSTRAINT [FK_Log_User] FOREIGN KEY ([UserId]) REFERENCES [User]([Id]),
     CONSTRAINT [FK_Log_LogLevel] FOREIGN KEY (LogLeveId) REFERENCES [LogLevel]([Id]),

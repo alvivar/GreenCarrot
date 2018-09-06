@@ -7,7 +7,7 @@
     [CityId] INT NOT NULL,
     [ProvinceId] INT NOT NULL,
     [CountryId] INT NOT NULL,
-    [ZipCode] INT NOT NULL,
+    [ZipCode] VARCHAR(10) NOT NULL,
     [Details] VARCHAR(1000) NOT NULL,
     [Geography] [sys].[geography] NOT NULL,
     CONSTRAINT [FK_Address_City] FOREIGN KEY ([CityId]) REFERENCES [City]([Id]),
