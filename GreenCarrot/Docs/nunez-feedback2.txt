@@ -1,32 +1,44 @@
     Zipcode que se alfanumerico, ahorta tienen letras
-        Listo
+
+            Listo
 
     Tabla UserAdress tiene sentido solo si el usuario puede tener N direcciones
-        Un usuario proveedor quizá tenga un par de tiendas por ahí.
+
+            Un usuario proveedor quizá tenga un par de tiendas por ahí.
 
     El checksum debe ser varbinary
-        Listo
+
+            Listo
 
     Un amount no tiene sentido int, no tien sentido nunca plata como ints
-        Oops (listo)
+
+            Oops (listo)
 
     Tendria un transaction subtype , description de transaccion, no le veo
     sentido a transactiondetails, falta informacion de control-auditoria en
     transacciones y balance, el amoun es un muy pequeno, no pasa de 9999.9999
-        Agregué todos esos datos y sobre la informacíon de auditoría hice 2
-        tablas, [TransactionLog] y [BalanceLog] que almacenan también los
-        dineros y dineros anteriores y vinculan con el [Log] general, agregué
-        también espacio para nombre de la tabla y columna en el log, será
-        suficiente?
+
+            Agregué todos esos datos y sobre la informacíon de auditoría hice 2
+            tablas, [TransactionLog] y [BalanceLog] que almacenan también los
+            dineros y dineros anteriores y vinculan ambas con el [Log] general,
+            agregué también espacio para nombre de la tabla y columna en el log,
+            qué tal?
+
+            La idea de [TransactionDetail] provino de este concepto
+            https://en.wikipedia.org/wiki/Double-entry_bookkeeping_system La
+            idea era como guardar el dato del movimiento del dinero, usuario A
+            le da dinero a usuario B, usuario B recibe dinero de usuario A.
 
     La faltura no tiene numnero ni informacion de control ni a quien se factura
-        Agregué dos campos al [Invoice], el InvoiceFromUserId y el
-        InvoiceToUserId para indicar la dirección de la facturación. Agregué
-        InvoiceDocumentId como un campo para vincularlo con el ID en la factura
-        tributaria, será suficiente?
+
+            Agregué dos campos al [Invoice], el InvoiceFromUserId y el
+            InvoiceToUserId para indicar la dirección de la facturación. Agregué
+            InvoiceDocumentId como un campo para vincularlo con el ID en la
+            factura tributaria, será suficiente?
 
     El OderID es un varchar, haciendo la busqueda mas lenta
-        Las órdenas se manejan diferente!
+
+            Las órdenas se manejan diferente!
 
     Cuando tenes payments methods sin creditcard info, lo que te dan es un token
     valido de cobro sobre la plataforma que expira cada cierto tiempo, entonces
@@ -36,11 +48,12 @@
     Hay un monton de montos en el pago que mas bien son de la factura, el pago
     es un solo mento y tenes que tener los datos que devuelve el payment
     processor, eso lo ven en paypal o openpay
-        Moví las variaciones de los pagos al [Invoice] e [InvoiceDetail], los
-        descuentos y taxes son por [InvoiceDetail] de cada producto de la
-        factura, para que se puedan aplicar descuentos por productos y Paypal
-        pues lo guarda por producto en el Invoice. Alguna observación sobre
-        esto?
+
+            Moví las variaciones de los pagos al [Invoice] e [InvoiceDetail],
+            los descuentos y taxes son por [InvoiceDetail] de cada producto de
+            la factura, para que se puedan aplicar descuentos por productos y
+            Paypal pues lo guarda por producto en el Invoice. Alguna observación
+            sobre esto?
 
     No hay forma de saber si una transaccion corresponde a un pago
 
