@@ -672,4 +672,18 @@
     <Property Name="ParentElementType" Value="SqlTable" />
     <Property Name="NewName" Value="DiscountAmount" />
   </Operation>
+  <Operation Name="Rename Refactor" Key="a7b41485-bc58-4768-ae2f-f2ea60c98735" ChangeDateTime="09/09/2018 08:27:51">
+    <Property Name="ElementName" Value="[dbo].[FK_BalanceLog_ToTable]" />
+    <Property Name="ElementType" Value="SqlForeignKeyConstraint" />
+    <Property Name="ParentElementName" Value="[dbo].[BalanceLog]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="[FK_BalanceLog_Balance]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="38ffc8e1-cfe0-4434-9689-e5606a5ce832" ChangeDateTime="09/09/2018 08:27:54">
+    <Property Name="ElementName" Value="[dbo].[FK_BalanceLog_ToTable_1]" />
+    <Property Name="ElementType" Value="SqlForeignKeyConstraint" />
+    <Property Name="ParentElementName" Value="[dbo].[BalanceLog]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="[FK_BalanceLog_Log]" />
+  </Operation>
 </Operations>
