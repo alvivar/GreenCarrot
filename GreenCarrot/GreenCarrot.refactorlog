@@ -686,4 +686,39 @@
     <Property Name="ParentElementType" Value="SqlTable" />
     <Property Name="NewName" Value="[FK_BalanceLog_Log]" />
   </Operation>
+  <Operation Name="Rename Refactor" Key="dea69514-a1a2-44ec-8995-1a445d5630d8" ChangeDateTime="09/09/2018 19:29:00">
+    <Property Name="ElementName" Value="[dbo].[Invoice].[InvoiceId]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Invoice]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="RealInvoiceId" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="e606d0dc-e3bb-4e15-b982-b21d325bbd05" ChangeDateTime="09/09/2018 19:29:13">
+    <Property Name="ElementName" Value="[dbo].[Invoice].[RealInvoiceId]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Invoice]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="DocumentsInvoiceId" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="a056c9d4-3cf2-4d0d-9743-f3152285a12c" ChangeDateTime="09/09/2018 19:29:19">
+    <Property Name="ElementName" Value="[dbo].[Invoice].[DocumentsInvoiceId]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Invoice]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="DocumentInvoiceId" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="38034091-9ba5-48ee-bbb1-42bfecd58c9d" ChangeDateTime="09/09/2018 20:56:59">
+    <Property Name="ElementName" Value="[dbo].[FK_Invoice_ToTable]" />
+    <Property Name="ElementType" Value="SqlForeignKeyConstraint" />
+    <Property Name="ParentElementName" Value="[dbo].[Invoice]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="[FK_Invoice_FromUser]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="cc6f0d5c-ba5d-4731-a574-f6c0dcd85674" ChangeDateTime="09/09/2018 20:57:07">
+    <Property Name="ElementName" Value="[dbo].[FK_Invoice_ToTable_1]" />
+    <Property Name="ElementType" Value="SqlForeignKeyConstraint" />
+    <Property Name="ParentElementName" Value="[dbo].[Invoice]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="[FK_Invoice_ToUser]" />
+  </Operation>
 </Operations>
