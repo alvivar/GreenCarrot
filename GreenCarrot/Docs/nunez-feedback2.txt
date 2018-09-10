@@ -1,6 +1,7 @@
+
     Zipcode que se alfanumerico, ahorta tienen letras
 
-            Listo
+            Listo!
 
     Tabla UserAdress tiene sentido solo si el usuario puede tener N direcciones
 
@@ -8,7 +9,7 @@
 
     El checksum debe ser varbinary
 
-            Listo
+            Listo!
 
     Un amount no tiene sentido int, no tien sentido nunca plata como ints
 
@@ -38,12 +39,17 @@
 
     El OderID es un varchar, haciendo la busqueda mas lenta
 
-            Las órdenas se manejan diferente!
+            Las órdenes se manejarán diferente ahora
 
     Cuando tenes payments methods sin creditcard info, lo que te dan es un token
     valido de cobro sobre la plataforma que expira cada cierto tiempo, entonces
     no guardamos el card, si no esos tokens en el tiempo, sabiendo cual es el
     valido
+
+            Hice la tabla [PaymentToken] con un FK a [PaymentMethod] para
+            guardar todos los tokens generados sobre el payment method. Luego
+            almaceno el PaymentToken válido y usado en el payment en
+            [UserPaymentMethod] que sería el vínculo del usuario con el pago.
 
     Hay un monton de montos en el pago que mas bien son de la factura, el pago
     es un solo mento y tenes que tener los datos que devuelve el payment
@@ -57,6 +63,9 @@
 
     No hay forma de saber si una transaccion corresponde a un pago
 
+        Agregué un FK en [Transaction] que conecta con [Payment]. Hm.
+
     No tenes las ordenes tampoco, los detalles de factura o detalles de orden,
     tampoco un catalogo de productos ni tablas para que los comercios suban las
     mercaderias de ellos
+
