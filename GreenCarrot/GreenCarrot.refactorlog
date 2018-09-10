@@ -763,4 +763,46 @@
     <Property Name="ParentElementType" Value="SqlTable" />
     <Property Name="NewName" Value="Expires" />
   </Operation>
+  <Operation Name="Rename Refactor" Key="4b8d8c20-e6f4-4fcb-ae7d-48d8fd1ff2ec" ChangeDateTime="09/10/2018 12:28:51">
+    <Property Name="ElementName" Value="[dbo].[FK_OrderProduct_ToTable]" />
+    <Property Name="ElementType" Value="SqlForeignKeyConstraint" />
+    <Property Name="ParentElementName" Value="[dbo].[OrderProduct]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="[FK_OrderProduct_Order]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="b6ed0ebf-6eb5-4582-a781-ab71ffdb49cd" ChangeDateTime="09/10/2018 12:28:56">
+    <Property Name="ElementName" Value="[dbo].[FK_OrderProduct_ToTable_1]" />
+    <Property Name="ElementType" Value="SqlForeignKeyConstraint" />
+    <Property Name="ParentElementName" Value="[dbo].[OrderProduct]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="[FK_OrderProduct_Product]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="9f8fb326-28bb-48df-ac9a-6dc544173d9e" ChangeDateTime="09/10/2018 12:41:57">
+    <Property Name="ElementName" Value="[dbo].[FK_ProviderProduct_ToTable]" />
+    <Property Name="ElementType" Value="SqlForeignKeyConstraint" />
+    <Property Name="ParentElementName" Value="[dbo].[ProviderProduct]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="[FK_ProviderProduct_Provider]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="21887a74-d01a-4634-8451-77d1ed73ab87" ChangeDateTime="09/10/2018 12:42:06">
+    <Property Name="ElementName" Value="[dbo].[FK_ProviderProduct_ToTable_1]" />
+    <Property Name="ElementType" Value="SqlForeignKeyConstraint" />
+    <Property Name="ParentElementName" Value="[dbo].[ProviderProduct]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="[FK_ProviderProduct_Product]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="458cb5b1-2277-48eb-9202-a8f75b318080" ChangeDateTime="09/10/2018 12:59:15">
+    <Property Name="ElementName" Value="[dbo].[FK_ProviderAddress_ToTable]" />
+    <Property Name="ElementType" Value="SqlForeignKeyConstraint" />
+    <Property Name="ParentElementName" Value="[dbo].[ProviderAddress]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="[FK_ProviderAddress_Provider]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="eeeac6fa-ee20-41d2-94dd-302019b0b9b8" ChangeDateTime="09/10/2018 12:59:20">
+    <Property Name="ElementName" Value="[dbo].[FK_ProviderAddress_ToTable_1]" />
+    <Property Name="ElementType" Value="SqlForeignKeyConstraint" />
+    <Property Name="ParentElementName" Value="[dbo].[ProviderAddress]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="[FK_ProviderAddress_Address]" />
+  </Operation>
 </Operations>
