@@ -1,6 +1,7 @@
 ﻿CREATE TABLE [dbo].[Transaction]
 (
     [Id] INT NOT NULL PRIMARY KEY IDENTITY(1, 1),
+    [PaymentId] INT NULL,
     [TransactionStatusId] INT NOT NULL,
     [TransactionTypeId] INT NOT NULL,
     [TransactionSubtypeId] INT NOT NULL,
@@ -8,6 +9,7 @@
     [Amount] DECIMAL(19, 4) NOT NULL,
     [Description] VARCHAR(500) NOT NULL,
     [Created] DATETIME NOT NULL,
+    CONSTRAINT [FK_Transaction_Payment] FOREIGN KEY ([PaymentId]) REFERENCES [Payment]([Id]),
     CONSTRAINT [FK_Transaction_Status] FOREIGN KEY ([TransactionStatusId]) REFERENCES [TransactionStatus]([Id]),
     CONSTRAINT [FK_Transaction_TransactionType] FOREIGN KEY ([TransactionTypeId]) REFERENCES [TransactionType]([Id]),
     CONSTRAINT [FK_Transaction_TransactionSubtype] FOREIGN KEY ([TransactionSubtypeId]) REFERENCES [TransactionSubtype]([Id]),
