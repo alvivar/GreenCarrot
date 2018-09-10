@@ -2,9 +2,11 @@
     Notes
 
 
+About auditing
+https://stackoverflow.com/questions/201527/best-design-for-a-changelog-auditing-database-table
+
 Good technique to register monetary transactions
 https://en.wikipedia.org/wiki/Double-entry_bookkeeping_system
-
 
 >
 https://dba.stackexchange.com/questions/43585/financial-transactions-with-and-without-commissions
