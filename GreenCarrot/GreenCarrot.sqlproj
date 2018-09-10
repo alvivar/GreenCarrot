@@ -99,6 +99,7 @@
     <Build Include="OrderStatus.sql" />
     <Build Include="OrderProduct.sql" />
     <Build Include="OrderProductStatus.sql" />
+    <Build Include="ProviderAddress.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="GreenCarrot.refactorlog" />

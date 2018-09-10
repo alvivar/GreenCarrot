@@ -76,4 +76,3 @@
         orden mediante [OrderProduct]. Connecté la orden con [Payment] para
         cuando ocurra, y conecté el [Product] con [InvoiceDetail] para más
         claridad.
-
