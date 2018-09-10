@@ -5,7 +5,7 @@
 
     Tabla UserAdress tiene sentido solo si el usuario puede tener N direcciones
 
-            Un usuario proveedor quizá tenga un par de tiendas por ahí.
+            Hm.
 
     El checksum debe ser varbinary
 

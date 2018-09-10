@@ -92,6 +92,13 @@
     <Build Include="TransactionLog.sql" />
     <Build Include="BalanceLog.sql" />
     <Build Include="PaymentToken.sql" />
+    <Build Include="Provider.sql" />
+    <Build Include="ProviderProduct.sql" />
+    <Build Include="Product.sql" />
+    <Build Include="Order.sql" />
+    <Build Include="OrderStatus.sql" />
+    <Build Include="OrderProduct.sql" />
+    <Build Include="OrderProductStatus.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="GreenCarrot.refactorlog" />
