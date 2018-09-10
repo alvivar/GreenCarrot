@@ -721,4 +721,46 @@
     <Property Name="ParentElementType" Value="SqlTable" />
     <Property Name="NewName" Value="[FK_Invoice_ToUser]" />
   </Operation>
+  <Operation Name="Rename Refactor" Key="283e17af-9393-4789-8573-49da3779fbbb" ChangeDateTime="09/10/2018 00:43:27">
+    <Property Name="ElementName" Value="[dbo].[UserPaymentMethod].[CardNumber]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[UserPaymentMethod]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="PaymentTokenId" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="227ec3cc-e649-468f-ac4f-a6b4aefaa817" ChangeDateTime="09/10/2018 00:43:38">
+    <Property Name="ElementName" Value="[dbo].[UserPaymentMethod].[Details]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[UserPaymentMethod]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Description" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="137b045e-297f-4b44-830e-d994337c0ac5" ChangeDateTime="09/10/2018 00:43:51">
+    <Property Name="ElementName" Value="[dbo].[UserPaymentMethod].[Description]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[UserPaymentMethod]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Details" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="9b803dfa-e6cf-4aef-aa88-cf427bf1778d" ChangeDateTime="09/10/2018 00:43:55">
+    <Property Name="ElementName" Value="[dbo].[UserPaymentMethod].[Details]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[UserPaymentMethod]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Description" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="00864ce1-8c62-406d-9618-8e0188d79b03" ChangeDateTime="09/10/2018 00:51:37">
+    <Property Name="ElementName" Value="[dbo].[UserPaymentMethod].[ValidPaymentTokenId]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[UserPaymentMethod]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="PaymentTokenId" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="18f8246f-bcd8-4cdb-aac4-224b13affb35" ChangeDateTime="09/10/2018 01:01:52">
+    <Property Name="ElementName" Value="[dbo].[PaymentToken].[ValidUntil]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[PaymentToken]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Expires" />
+  </Operation>
 </Operations>

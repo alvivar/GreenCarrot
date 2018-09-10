@@ -91,6 +91,7 @@
     <Build Include="TransactionSubtype.sql" />
     <Build Include="TransactionLog.sql" />
     <Build Include="BalanceLog.sql" />
+    <Build Include="PaymentToken.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="GreenCarrot.refactorlog" />
