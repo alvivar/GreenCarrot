@@ -69,3 +69,11 @@
     tampoco un catalogo de productos ni tablas para que los comercios suban las
     mercaderias de ellos
 
+        Volví a crear las tablas de órdenes [Order] y productos [Product]
+        similar a la primera iteración, los [Product]s vinculados con [Provider]
+        que vendría a contener los datos de un usuario que lo diferencian como
+        provedor (nombre del negocio, etc), y los productos se conectan con la
+        orden mediante [OrderProduct]. Connecté la orden con [Payment] para
+        cuando ocurra, y conecté el [Product] con [InvoiceDetail] para más
+        claridad.
+
