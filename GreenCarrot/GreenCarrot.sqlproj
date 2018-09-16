@@ -8,7 +8,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectVersion>4.1</ProjectVersion>
     <ProjectGuid>{ab4b07e2-2a43-4c2e-a73e-64281a7e7b47}</ProjectGuid>
-    <DSP>Microsoft.Data.Tools.Schema.Sql.Sql130DatabaseSchemaProvider</DSP>
+    <DSP>Microsoft.Data.Tools.Schema.Sql.SqlAzureDatabaseSchemaProvider</DSP>
     <OutputType>Database</OutputType>
     <RootPath>
     </RootPath>
@@ -89,7 +89,6 @@
     <Build Include="UserAuthentication.sql" />
     <Build Include="TransactionStatus.sql" />
     <Build Include="TransactionSubtype.sql" />
-    <Build Include="TransactionLog.sql" />
     <Build Include="BalanceLog.sql" />
     <Build Include="PaymentToken.sql" />
     <Build Include="Provider.sql" />
@@ -100,6 +99,7 @@
     <Build Include="OrderProduct.sql" />
     <Build Include="OrderProductStatus.sql" />
     <Build Include="ProviderAddress.sql" />
+    <Build Include="TransactionPayment.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="GreenCarrot.refactorlog" />
