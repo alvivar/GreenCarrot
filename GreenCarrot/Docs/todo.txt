@@ -2,6 +2,19 @@
         To do
 
 
+    feedback Latest Núnez tips
+
+    storeprocedure Agregar editar nuevo cliente
+    storeprocedure Agregar editar información de payment y merchant
+    storeprocedure Register a payment
+    storeprocedure Register a transaction
+
+    tsql Script to fill the database to be functional
+
+    azure Test replication
+    nodejs Fill the database once
+
+
     2018/09/03 08:04 am
     x Núnez feedback 1
     x Checksums
