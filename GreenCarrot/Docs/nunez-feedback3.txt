@@ -1,0 +1,106 @@
+
+Comentarios abajo:
+
+On Mon, Sep 10, 2018 at 7:49 AM Andrés Villalobos <andresalvivar@gmail.com> wrote:
+
+    Todo bien?
+
+    Adjunto otra iteración del diseño transaccional que incluye el feedback anterior.
+    Particularmente sobre los puntos resueltos:
+
+        Tendria un transaction subtype , description de transaccion, no le veo
+        sentido a transactiondetails, falta informacion de control-auditoria en
+        transacciones y balance, el amoun es un muy pequeno, no pasa de 9999.9999
+
+                Agregué todos esos datos y sobre la informacíon de auditoría hice 2
+                tablas, [TransactionLog] y [BalanceLog] que almacenan también los
+                dineros y dineros anteriores y vinculan ambas con el [Log] general,
+                agregué también espacio para nombre de la tabla y columna en el log,
+                qué tal?
+
+
+Dado que ya es una tabla de transacciones, quiere decir que no sufre borrados ni
+updates, por ende la bitacora no se ocupa, transactions es bitacora en si mismo.
+Info de auditoria me referia a tener en transaciones, checksum, fecha de
+insercion del registro, usuario que lo inserto, computadora, y asi.
+
+
+                La idea de [TransactionDetail] provino de este concepto
+                https://en.wikipedia.org/wiki/Double-entry_bookkeeping_system La
+                idea era como guardar el dato del movimiento del dinero, usuario A
+                le da dinero a usuario B, usuario B recibe dinero de usuario A.
+
+
+Podría ser util si, pero metele tambien checksum y fecha.
+
+
+
+        La faltura no tiene numnero ni informacion de control ni a quien se factura
+
+                Agregué dos campos al [Invoice], el InvoiceFromUserId y el
+                InvoiceToUserId para indicar la dirección de la facturación. Agregué
+                InvoiceDocumentId como un campo para vincularlo con el ID en la
+                factura tributaria, será suficiente?
+
+
+Es util esos campos, creo que el numero de factura es mejor que sea un
+consecutivo. Y de nuevo audit es checksum, coputer, user, fecha de creacion.
+
+
+
+        Cuando tenes payments methods sin creditcard info, lo que te dan es un token
+        valido de cobro sobre la plataforma que expira cada cierto tiempo, entonces
+        no guardamos el card, si no esos tokens en el tiempo, sabiendo cual es el
+        valido
+
+                Hice la tabla [PaymentToken] con un FK a [PaymentMethod] para
+                guardar todos los tokens generados sobre el payment method. Luego
+                almaceno el PaymentToken válido y usado en el payment en
+                [UserPaymentMethod] que sería el vínculo del usuario con el pago.
+
+
+Listo.
+
+
+
+        Hay un monton de montos en el pago que mas bien son de la factura, el pago
+        es un solo mento y tenes que tener los datos que devuelve el payment
+        processor, eso lo ven en paypal o openpay
+
+                Moví las variaciones de los pagos al [Invoice] e [InvoiceDetail],
+                los descuentos y taxes son por [InvoiceDetail] de cada producto de
+                la factura, para que se puedan aplicar descuentos por productos y
+                Paypal pues lo guarda por producto en el Invoice. Alguna observación
+                sobre esto?
+
+
+Listo.
+
+        No hay forma de saber si una transaccion corresponde a un pago
+
+            Agregué un FK en [Transaction] que conecta con [Payment].
+
+
+Mejor tabla intermedia, porque en la mayoria de las transacciones no
+necesariamente vienen por un pago.
+
+
+
+        No tenes las ordenes tampoco, los detalles de factura o detalles de orden,
+        tampoco un catalogo de productos ni tablas para que los comercios suban las
+        mercaderias de ellos
+
+            Volví a crear las tablas de órdenes [Order] y productos [Product]
+            similar a la primera iteración, los [Product]s vinculados con [Provider]
+            que vendría a contener los datos de un usuario que lo diferencian como
+            provedor (nombre del negocio, etc), y los productos se conectan con la
+            orden mediante [OrderProduct]. Connecté la orden con [Payment] para
+            cuando ocurra, y conecté el [Product] con [InvoiceDetail] para más
+            claridad.
+
+
+Lo que falta es que cuando el proveedor ofrece un producto, dice ok voy a
+ofrecer 10 unidades de esta camisa, y la sube. Ya sea que se venda o no, puede
+que el producto se deje de ofrecer, eso no esta contemplado, que el provedor de
+debaja algun producto. Luego la orden, podemos ver que un usuario pide un
+producto pero no dice la cantidad.
