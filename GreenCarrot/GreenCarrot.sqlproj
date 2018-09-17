@@ -59,9 +59,11 @@
     <Folder Include="Properties" />
     <Folder Include="Docs" />
     <Folder Include="Tables" />
+    <Folder Include="Scripts" />
+    <Folder Include="StoreProcedures" />
+    <Folder Include="StoreProcedures\CRUD" />
   </ItemGroup>
   <ItemGroup>
-    <Build Include="InsertUser.sql" />
     <Build Include="Tables\Address.sql" />
     <Build Include="Tables\Authentication.sql" />
     <Build Include="Tables\AuthenticationSource.sql" />
@@ -98,6 +100,11 @@
     <Build Include="Tables\TransactionSubtype.sql" />
     <Build Include="Tables\TransactionType.sql" />
     <Build Include="Tables\User.sql" />
+    <Build Include="StoreProcedures\CRUD\AddressInsert.sql" />
+    <Build Include="StoreProcedures\CRUD\PaymentMethodInsert.sql" />
+    <Build Include="StoreProcedures\CRUD\UserAddressInsert.sql" />
+    <Build Include="StoreProcedures\CRUD\UserInsert.sql" />
+    <Build Include="StoreProcedures\CRUD\UserPaymentMethodInsert.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="GreenCarrot.refactorlog" />
@@ -107,5 +114,8 @@
     <Build Include="Tables\UserAuthentication.sql" />
     <Build Include="Tables\UserPaymentMethod.sql" />
     <Build Include="Tables\UserRole.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Scripts\DatabaseFilling.sql" />
   </ItemGroup>
 </Project>
