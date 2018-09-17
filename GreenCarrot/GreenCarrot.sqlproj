@@ -89,7 +89,6 @@
     <Build Include="UserAuthentication.sql" />
     <Build Include="TransactionStatus.sql" />
     <Build Include="TransactionSubtype.sql" />
-    <Build Include="BalanceLog.sql" />
     <Build Include="PaymentToken.sql" />
     <Build Include="Provider.sql" />
     <Build Include="ProviderProduct.sql" />
