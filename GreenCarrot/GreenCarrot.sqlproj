@@ -117,5 +117,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Scripts\DatabaseFilling.sql" />
+    <None Include="Scripts\DatabaseCleaning.sql" />
   </ItemGroup>
 </Project>
