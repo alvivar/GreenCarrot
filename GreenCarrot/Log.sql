@@ -15,7 +15,7 @@
     [ReferenceId1] INT NULL,
     [ReferenceId2] INT NULL,
     [CheckSum] VARBINARY(100) NOT NULL,
-    [Logged] DATETIME NOT NULL,
+    [Created] DATETIME NOT NULL,
     CONSTRAINT [FK_Log_User] FOREIGN KEY ([UserId]) REFERENCES [User]([Id]),
     CONSTRAINT [FK_Log_LogLevel] FOREIGN KEY (LogLeveId) REFERENCES [LogLevel]([Id]),
     CONSTRAINT [FK_Log_LogType] FOREIGN KEY (LogTypeId) REFERENCES [LogType]([Id]),

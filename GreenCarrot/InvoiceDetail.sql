@@ -10,6 +10,7 @@
     [TaxAmount] DECIMAL(19, 4) NOT NULL,
     [TaxZipCode] VARCHAR(100) NOT NULL,
     [TotalAmount] DECIMAL(19, 4) NOT NULL,
+    [Created] DATETIME NOT NULL,
     CONSTRAINT [FK_InvoiceDetail_Product] FOREIGN KEY ([ProductId]) REFERENCES [Product]([Id]),
     CONSTRAINT [FK_InvoiceDetail_Invoice] FOREIGN KEY ([InvoiceId]) REFERENCES [Invoice]([Id])
 )

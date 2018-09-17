@@ -4,5 +4,6 @@
 	[UserId] INT NOT NULL,
 	[Name] VARCHAR(100) NOT NULL,
 	[Description] VARCHAR(500) NOT NULL,
+	[Created] DATETIME NOT NULL,
 	CONSTRAINT [FK_Provider_User] FOREIGN KEY ([UserId]) REFERENCES [User]([Id])
 )

@@ -5,6 +5,7 @@
 	[Sku] VARCHAR(250) NOT NULL,
 	[Description] VARCHAR(250) NOT NULL,
 	[Price] DECIMAL(19, 4) NOT NULL,
-	[Quantity] INT NOT NULL, 
-    [Available] BIT NOT NULL
+	[Quantity] INT NOT NULL,
+	[Available] BIT NOT NULL,
+	[Created] DATETIME NOT NULL
 )
