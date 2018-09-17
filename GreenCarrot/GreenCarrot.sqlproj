@@ -58,50 +58,54 @@
   <ItemGroup>
     <Folder Include="Properties" />
     <Folder Include="Docs" />
+    <Folder Include="Tables" />
   </ItemGroup>
   <ItemGroup>
-    <Build Include="User.sql" />
-    <Build Include="Address.sql" />
-    <Build Include="UserAddress.sql" />
-    <Build Include="Invoice.sql" />
-    <Build Include="InvoiceStatus.sql" />
-    <Build Include="Payment.sql" />
-    <Build Include="PaymentMethod.sql" />
-    <Build Include="UserPaymentMethod.sql" />
-    <Build Include="Balance.sql" />
-    <Build Include="InvoiceDetail.sql" />
-    <Build Include="City.sql" />
-    <Build Include="Country.sql" />
-    <Build Include="Province.sql" />
-    <Build Include="UserRole.sql" />
-    <Build Include="Role.sql" />
-    <Build Include="Permission.sql" />
-    <Build Include="RolePermission.sql" />
-    <Build Include="Log.sql" />
-    <Build Include="LogLevel.sql" />
-    <Build Include="LogType.sql" />
-    <Build Include="LogSource.sql" />
-    <Build Include="Transaction.sql" />
-    <Build Include="TransactionDetail.sql" />
-    <Build Include="Authentication.sql" />
-    <Build Include="TransactionType.sql" />
-    <Build Include="AuthenticationSource.sql" />
-    <Build Include="UserAuthentication.sql" />
-    <Build Include="TransactionStatus.sql" />
-    <Build Include="TransactionSubtype.sql" />
-    <Build Include="PaymentToken.sql" />
-    <Build Include="Provider.sql" />
-    <Build Include="ProviderProduct.sql" />
-    <Build Include="Product.sql" />
-    <Build Include="Order.sql" />
-    <Build Include="OrderStatus.sql" />
-    <Build Include="OrderProduct.sql" />
-    <Build Include="OrderProductStatus.sql" />
-    <Build Include="ProviderAddress.sql" />
-    <Build Include="TransactionPayment.sql" />
-    <Build Include="InvoicePayment.sql" />
+    <Build Include="InsertUser.sql" />
+    <Build Include="Tables\Address.sql" />
+    <Build Include="Tables\Authentication.sql" />
+    <Build Include="Tables\AuthenticationSource.sql" />
+    <Build Include="Tables\Balance.sql" />
+    <Build Include="Tables\City.sql" />
+    <Build Include="Tables\Country.sql" />
+    <Build Include="Tables\Invoice.sql" />
+    <Build Include="Tables\InvoiceDetail.sql" />
+    <Build Include="Tables\InvoicePayment.sql" />
+    <Build Include="Tables\InvoiceStatus.sql" />
+    <Build Include="Tables\Log.sql" />
+    <Build Include="Tables\LogLevel.sql" />
+    <Build Include="Tables\LogSource.sql" />
+    <Build Include="Tables\LogType.sql" />
+    <Build Include="Tables\Order.sql" />
+    <Build Include="Tables\OrderProduct.sql" />
+    <Build Include="Tables\OrderProductStatus.sql" />
+    <Build Include="Tables\OrderStatus.sql" />
+    <Build Include="Tables\Payment.sql" />
+    <Build Include="Tables\PaymentMethod.sql" />
+    <Build Include="Tables\PaymentToken.sql" />
+    <Build Include="Tables\Permission.sql" />
+    <Build Include="Tables\Product.sql" />
+    <Build Include="Tables\Provider.sql" />
+    <Build Include="Tables\ProviderAddress.sql" />
+    <Build Include="Tables\ProviderProduct.sql" />
+    <Build Include="Tables\Province.sql" />
+    <Build Include="Tables\Role.sql" />
+    <Build Include="Tables\RolePermission.sql" />
+    <Build Include="Tables\Transaction.sql" />
+    <Build Include="Tables\TransactionDetail.sql" />
+    <Build Include="Tables\TransactionPayment.sql" />
+    <Build Include="Tables\TransactionStatus.sql" />
+    <Build Include="Tables\TransactionSubtype.sql" />
+    <Build Include="Tables\TransactionType.sql" />
+    <Build Include="Tables\User.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="GreenCarrot.refactorlog" />
+  </ItemGroup>
+  <ItemGroup>
+    <Build Include="Tables\UserAddress.sql" />
+    <Build Include="Tables\UserAuthentication.sql" />
+    <Build Include="Tables\UserPaymentMethod.sql" />
+    <Build Include="Tables\UserRole.sql" />
   </ItemGroup>
 </Project>
