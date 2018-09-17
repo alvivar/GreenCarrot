@@ -7,7 +7,7 @@
     [InvoiceToUserId] INT NOT NULL,
     [InvoiceStatusId] INT NOT NULL,
     [InsertionUserId] INT NOT NULL,
-    [Computer] VARCHAR(50) NOT NULL,
+    [Computer] VARCHAR(100) NOT NULL,
     [SubTotalAmount] DECIMAL(19, 4) NOT NULL,
     [ShippingAmount] DECIMAL(19, 4) NOT NULL,
     [InsuranceAmount] DECIMAL (19, 4) NOT NULL,

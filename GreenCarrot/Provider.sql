@@ -2,7 +2,7 @@
 (
 	[Id] INT NOT NULL PRIMARY KEY IDENTITY(1, 1),
 	[UserId] INT NOT NULL,
-	[Name] VARCHAR(50) NOT NULL,
+	[Name] VARCHAR(100) NOT NULL,
 	[Description] VARCHAR(500) NOT NULL,
 	CONSTRAINT [FK_Provider_User] FOREIGN KEY ([UserId]) REFERENCES [User]([Id])
 )

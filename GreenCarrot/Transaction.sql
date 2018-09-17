@@ -6,7 +6,7 @@
     [TransactionSubtypeId] INT NOT NULL,
     [TransactionDetailId] INT NOT NULL,
     [InsertionUserId] INT NOT NULL,
-    [Computer] VARCHAR(50) NOT NULL,
+    [Computer] VARCHAR(100) NOT NULL,
     [Amount] DECIMAL(19, 4) NOT NULL,
     [Description] VARCHAR(500) NOT NULL,
     [Created] DATETIME NOT NULL,
