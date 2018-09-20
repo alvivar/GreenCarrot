@@ -116,6 +116,8 @@
     <Build Include="PaymentInsert.sql" />
     <Build Include="OrderInsert.sql" />
     <Build Include="PaymentTokenInsert.sql" />
+    <Build Include="TransactionInsert.sql" />
+    <Build Include="BalanceInsert.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="GreenCarrot.refactorlog" />
