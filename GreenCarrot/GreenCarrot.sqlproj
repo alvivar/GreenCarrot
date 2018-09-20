@@ -113,6 +113,9 @@
     <Build Include="StoreProcedures\CRUD\UserUpdate.sql" />
     <Build Include="StoreProcedures\CRUD\AddressUpdate.sql" />
     <None Include="Scripts\Test\TestGreenCarrotAddEditUser.sql" />
+    <Build Include="PaymentInsert.sql" />
+    <Build Include="OrderInsert.sql" />
+    <Build Include="PaymentTokenInsert.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="GreenCarrot.refactorlog" />
@@ -126,5 +129,6 @@
   <ItemGroup>
     <None Include="Scripts\DatabaseFilling.sql" />
     <None Include="Scripts\DatabaseCleaning.sql" />
+    <None Include="Scripts\Test\TestGreenCarrotUserPaymentTransactionBalance.sql" />
   </ItemGroup>
 </Project>

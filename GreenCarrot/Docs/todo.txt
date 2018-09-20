@@ -16,15 +16,15 @@
 |     | store procedure | Update inventory |
 | --- | --------------- | ---------------- |
 
-| --- | ------ | ------------------------- |
-|     | tsql   | Database filling script   |
-|     | azure  | Fill database with script |
-|     | azure  | Test replication          |
-|     | nodejs | Fill the database once    |
-| --- | ------ | ------------------------- |
+| --- | ----- | ------------------------- |
+|     | tsql  | Database filling script   |
+|     | azure | Fill database with script |
+|     | azure | Test replication          |
+| --- | ----- | ------------------------- |
 
 | --- | ------ | ------------------------- |
 |     | polish | UserName should be unique |
+|     | nodejs | Fill the database once    |
 | --- | ------ | ------------------------- |
 
 
@@ -34,11 +34,11 @@
 | ---- | --------------- | ---------------------------- |
 
 2018/09/16 07:00 pm
-| ---- | -------- | ----------------- |
-| done | feedback | Núnez feedback |
-| ---- | -------- | ----------------- |
+| ---- | -------- | ----------- |
+| done | feedback | Núnez email |
+| ---- | -------- | ----------- |
 
 2018/09/03 08:04 am
-| ---- | -------- | ---------------- |
-| done | feedback | Núnez feedback  |
-| ---- | -------- | ---------------- |
+| ---- | -------- | ----------- |
+| done | feedback | Núnez email |
+| ---- | -------- | ----------- |
