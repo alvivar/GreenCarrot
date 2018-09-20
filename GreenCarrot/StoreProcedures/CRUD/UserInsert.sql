@@ -19,7 +19,6 @@ SELECT
 	,@Email
 	,@Created
 
--- Begin Return Select <- do not remove
 SELECT
 	[Id]
 	,[UserName]
@@ -30,7 +29,6 @@ SELECT
 FROM
 	[dbo].[User]
 WHERE  [Id] = SCOPE_IDENTITY()
--- End Return Select <- do not remove
 
 COMMIT
 RETURN SCOPE_IDENTITY()

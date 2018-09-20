@@ -29,7 +29,6 @@ SELECT
 	,@Geography
 	,@Created
 
--- Begin Return Select <- do not remove
 SELECT
 	[Id]
 	,[Line1]
@@ -45,7 +44,6 @@ SELECT
 FROM
 	[dbo].[Address]
 WHERE  [Id] = SCOPE_IDENTITY()
--- End Return Select <- do not remove
 
 COMMIT
 RETURN SCOPE_IDENTITY()

@@ -19,7 +19,6 @@ SELECT
 	,@Description
 	,@Created
 
--- Begin Return Select <- do not remove
 SELECT
 	[Id]
 	,[UserId]
@@ -30,7 +29,6 @@ SELECT
 FROM
 	[dbo].[UserPaymentMethod]
 WHERE  [Id] = SCOPE_IDENTITY()
--- End Return Select <- do not remove
 
 COMMIT
 RETURN SCOPE_IDENTITY()

@@ -17,7 +17,6 @@ SELECT
 	,@ApiUrl
 	,@Created
 
--- Begin Return Select <- do not remove
 SELECT
 	[Id]
 	,[Name]
@@ -27,7 +26,6 @@ SELECT
 FROM
 	[dbo].[PaymentMethod]
 WHERE  [Id] = SCOPE_IDENTITY()
--- End Return Select <- do not remove
 
 COMMIT
 RETURN SCOPE_IDENTITY()
