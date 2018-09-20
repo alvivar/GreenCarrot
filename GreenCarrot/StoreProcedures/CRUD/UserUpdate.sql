@@ -24,7 +24,7 @@ COMMIT
 
 -- Return
 IF @UpdatedId IS NULL
-RETURN -1		-- It means error
+RETURN -1  -- It means error
 ELSE
 RETURN @UpdatedId
 
