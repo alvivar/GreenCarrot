@@ -1,23 +1,39 @@
 
-        TO DO
+| ------- |
+| T O D O |
+| ------- |
 
 
-    storeprocedure Agregar editar nuevo cliente
-    storeprocedure Agregar editar información de payment y merchant
-    storeprocedure Register a payment
-    storeprocedure Register a transaction
+| --- | --------------- | ------------------------------------------------ |
+|     | store procedure | Agregar editar nuevo cliente                     |
+|     | store procedure | Agregar editar información de payment y merchant |
+|     | store procedure | Register a payment                               |
+|     | store procedure | Register a transaction                           |
+| --- | --------------- | ------------------------------------------------ |
 
-    tsql database filling
+| --- | --------------- | ---------------- |
+|     | store procedure | Fill products    |
+|     | store procedure | Add order        |
+|     | store procedure | Update inventory |
+| --- | --------------- | ---------------- |
 
-    azure Test replication
-    nodejs Fill the database once
+| --- | ------ | ------------------------- |
+|     | tsql   | Database filling script   |
+|     | azure  | Fill database with script |
+|     | azure  | Test replication          |
+|     | nodejs | Fill the database once    |
+| --- | ------ | ------------------------- |
 
 
-    2018/09/16 07:00 pm
-    x feedback Latest Núnez tips
+2018/09/19 09:53 pm
 
-    2018/09/03 08:04 am
-    x Núnez feedback 1
-    x Checksums
-    x Logs
-    x Authentication stuff for users
+
+2018/09/16 07:00 pm
+| ---- | -------- | ----------------- |
+| done | feedback | Latest Núnez tips |
+| ---- | -------- | ----------------- |
+
+2018/09/03 08:04 am
+| ---- | -------- | ---------------- |
+| done | feedback | Núnez feedback 1 |
+| ---- | -------- | ---------------- |
