@@ -33,13 +33,23 @@ END
 ELSE
 BEGIN
 	DECLARE @currentAddressId INT
-	SELECT @currentAddressId = [Id]
+	SELECT @currentAddressId = [AddressId]
 	FROM [dbo].[UserAddress]
-	WHERE  [Id] = @UserId
+	WHERE  [UserId] = @UserId
 
 	EXECUTE [dbo].[AddressUpdate] @currentAddressId, @Line1, @Line2, @Line3, @CityId, @ProvinceId, @CountryId, @ZipCode, @AddressDescription, @Geography, @now
 END
 
+SELECT
+	[Id]
+	,[UserName]
+	,[Name]
+	,[LastName]
+	,[Email]
+	,[Created]
+FROM
+	[dbo].[User]
+WHERE  [Id] = @UserId
 
 COMMIT
 RETURN @UserId

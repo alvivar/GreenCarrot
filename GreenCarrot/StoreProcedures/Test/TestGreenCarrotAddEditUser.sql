@@ -10,5 +10,3 @@ DECLARE @provinceId INT
 EXECUTE @provinceId = [dbo].[ProvinceInsert] 'Cartago', @now
 
 EXEC [dbo].[GreenCarrotAddEditUser]  'adros', 'Andrés', 'Villalobos', 'andresalvivar@gmail.com', 'Line1', 'Line2', 'Line3', @cityId, @provinceId, @countryId, '10103', 'Description1', @geo, @now
-SELECT *
-FROM [dbo].[User]
