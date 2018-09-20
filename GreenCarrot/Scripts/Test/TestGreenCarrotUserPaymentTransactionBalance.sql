@@ -33,15 +33,24 @@ EXEC @userPaymentMethod = [dbo].[UserPaymentMethodInsert] @userid, @paymentMetho
 DECLARE @orderId INT
 EXEC @orderId = [dbo].[OrderInsert] @userid, NULL, 'Classic order by LeUser', @now
 
-
 -- Create a payment on the order by the user
+-- todo Null spaces, can't be null, they need their respective table connected
 -- todo Checksum needs to be calculated
+
+DECLARE @amount DECIMAL(19, 4) = 100000
 
 DECLARE @paymentId INT
 EXEC @paymentId = [dbo].[PaymentInsert] @orderId, @userPaymentMethod, NULL, 'Insertion Computer', 100000, 'Classic payment', @now, NULL
 
 -- Create a transaction
-
-
+-- todo Null spaces, can't be null, they need their respective table connected
+DECLARE @transactionId INT
+EXEC @transactionId = [dbo].[TransactionInsert] NULL, NULL, NULL, NULL, NULL, 'Insertion Computer', @amount, 'Classic transaction', @now, NULL
 
 -- Create a balance movement
+
+DECLARE @balancedAmount DECIMAL(19, 4) = @amount
+-- Plus/minus the previous transaction amount
+
+DECLARE @balanceId INT
+EXEC @balanceId = [dbo]	.[BalanceInsert] @userId, @transactionId, NULL, 'Insertion computer', @balancedAmount, 'Description ', @now, NULL
