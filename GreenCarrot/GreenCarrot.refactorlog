@@ -826,4 +826,11 @@
     <Property Name="ParentElementType" Value="SqlTable" />
     <Property Name="NewName" Value="[FK_TransactionPayment_Payment]" />
   </Operation>
+  <Operation Name="Rename Refactor" Key="bea279fc-7f14-40bf-aa0c-6b0d011d811d" ChangeDateTime="09/20/2018 08:31:36">
+    <Property Name="ElementName" Value="[dbo].[GreenCarrotAddEditClient]" />
+    <Property Name="ElementType" Value="SqlProcedure" />
+    <Property Name="ParentElementName" Value="[dbo]" />
+    <Property Name="ParentElementType" Value="SqlSchema" />
+    <Property Name="NewName" Value="[GreenCarrotAddEditUser]" />
+  </Operation>
 </Operations>
