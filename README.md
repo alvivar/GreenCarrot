@@ -1,2 +1,5 @@
-# GreenCarrot
-ITCR, Bases de Datos II, Project I: Green Carrot
+
+|    GreenCarrot    |
+| ----------------- |
+| Bases de Datos II |
+| ITCR              |
