@@ -62,7 +62,7 @@
     <Folder Include="Scripts" />
     <Folder Include="StoreProcedures" />
     <Folder Include="StoreProcedures\CRUD" />
-    <Folder Include="StoreProcedures\Test" />
+    <Folder Include="Scripts\Test" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="Tables\Address.sql" />
@@ -112,7 +112,7 @@
     <Build Include="StoreProcedures\GreenCarrotAddEditUser.sql" />
     <Build Include="StoreProcedures\CRUD\UserUpdate.sql" />
     <Build Include="StoreProcedures\CRUD\AddressUpdate.sql" />
-    <None Include="StoreProcedures\Test\TestGreenCarrotAddEditUser.sql" />
+    <None Include="Scripts\Test\TestGreenCarrotAddEditUser.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="GreenCarrot.refactorlog" />
