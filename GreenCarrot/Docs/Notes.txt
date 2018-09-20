@@ -1,6 +1,9 @@
 
-    Notes
+Notes
 
+
+Insert or Update
+https://stackoverflow.com/questions/108403/solutions-for-insert-or-update-on-sql-server
 
 About auditing
 https://stackoverflow.com/questions/201527/best-design-for-a-changelog-auditing-database-table
