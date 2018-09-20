@@ -105,6 +105,9 @@
     <Build Include="StoreProcedures\CRUD\UserAddressInsert.sql" />
     <Build Include="StoreProcedures\CRUD\UserInsert.sql" />
     <Build Include="StoreProcedures\CRUD\UserPaymentMethodInsert.sql" />
+    <Build Include="StoreProcedures\CRUD\CityInsert.sql" />
+    <Build Include="StoreProcedures\CRUD\ProvinceInsert.sql" />
+    <Build Include="StoreProcedures\CRUD\CountryInsert.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="GreenCarrot.refactorlog" />
