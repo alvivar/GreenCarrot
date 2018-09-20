@@ -42,7 +42,6 @@ EXECUTE @addressId2 = [dbo].[AddressInsert] 'Line1', 'Line2', 'Line3', @cityId2,
 EXECUTE [dbo].[UserAddressInsert] @userId2, @addressId2, @now
 
 
-
 -- #3
 DECLARE @userId3 INT
 EXECUTE @userId3 = [dbo].[UserInsert] 'User3', 'Name3', 'LastName3', 'Email3', @now
