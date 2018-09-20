@@ -108,6 +108,8 @@
     <Build Include="StoreProcedures\CRUD\CityInsert.sql" />
     <Build Include="StoreProcedures\CRUD\ProvinceInsert.sql" />
     <Build Include="StoreProcedures\CRUD\CountryInsert.sql" />
+    <Build Include="StoreProcedures\GreenCarrotAddEditClient.sql" />
+    <Build Include="StoreProcedures\CRUD\UserUpdate.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="GreenCarrot.refactorlog" />
@@ -121,5 +123,6 @@
   <ItemGroup>
     <None Include="Scripts\DatabaseFilling.sql" />
     <None Include="Scripts\DatabaseCleaning.sql" />
+    <None Include="Scripts\TestScript.sql" />
   </ItemGroup>
 </Project>
